@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>My java server</title>
+  <script>
+  </script>
+ </head>
+ <body>
+  <h2>This page was fetched by java. {{date}} {{time}}</h2>
+  <h3>Your IP is: {{ip}}</h3>
+  <h4>Method used: {{method}}</h4>
+  <hr />
+  <script type="text/javascript">
+  	if({{is post}})
+  	 document.write("This page was fetched using post.");
+  	else document.write("Not post :(");
+  </script>
+  <form method="post" action="index.html">
+   <input type="submit" name="submit" value="POST" />
+  </form>
+ </body>
+</html>
